@@ -1,21 +1,27 @@
-#include <stdio.h>
-#include <math.h>
-#include <ctype.h>
+import math
+number = 6857
+root = math.floor(math.sqrt(number))
 
-int main(void) {
-    setbuf(stdout, 0);
-    //int number = 600851475143;
-    int number = 4;
-    int fact=1;
-    for(int i =1;i<=number-1;i++) {
-        fact = fact * i;
-    }
-    int answer = ((fact+1)/number)%1;
-    if(answer == 0){
-        printf("this number is prime");
-    }
-    else {
-        printf("this number is not prime");
-    }
-    return 0;
-}
+if number%2 ==0:
+    print("Not prime")
+
+for i in range(root):
+    if i%2==1:
+        if number%i==0:
+            print("Not prime")
+
+#1=x
+#71= :)
+#839
+#1471
+#6857
+#59569=x
+#104441=x
+#486847=x
+#1234169=x
+#5753023=x
+#10086647=x
+#87625999=x
+#408464633=x
+#716151937=x
+#8462696833 = x

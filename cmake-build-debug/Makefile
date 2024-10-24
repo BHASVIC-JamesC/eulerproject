@@ -128,29 +128,29 @@ eulerproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/build
 .PHONY : eulerproject/fast
 
-Q4.obj: Q4.c.obj
-.PHONY : Q4.obj
+Q8.obj: Q8.c.obj
+.PHONY : Q8.obj
 
 # target to build an object file
-Q4.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q4.c.obj
-.PHONY : Q4.c.obj
+Q8.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q8.c.obj
+.PHONY : Q8.c.obj
 
-Q4.i: Q4.c.i
-.PHONY : Q4.i
+Q8.i: Q8.c.i
+.PHONY : Q8.i
 
 # target to preprocess a source file
-Q4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q4.c.i
-.PHONY : Q4.c.i
+Q8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q8.c.i
+.PHONY : Q8.c.i
 
-Q4.s: Q4.c.s
-.PHONY : Q4.s
+Q8.s: Q8.c.s
+.PHONY : Q8.s
 
 # target to generate assembly for a file
-Q4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q4.c.s
-.PHONY : Q4.c.s
+Q8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q8.c.s
+.PHONY : Q8.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... eulerproject
-	@echo ... Q4.obj
-	@echo ... Q4.i
-	@echo ... Q4.s
+	@echo ... Q8.obj
+	@echo ... Q8.i
+	@echo ... Q8.s
 .PHONY : help
 
 

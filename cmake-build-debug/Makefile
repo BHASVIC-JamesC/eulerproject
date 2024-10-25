@@ -152,6 +152,30 @@ Q12.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q12.c.s
 .PHONY : Q12.c.s
 
+Q13.obj: Q13.c.obj
+.PHONY : Q13.obj
+
+# target to build an object file
+Q13.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q13.c.obj
+.PHONY : Q13.c.obj
+
+Q13.i: Q13.c.i
+.PHONY : Q13.i
+
+# target to preprocess a source file
+Q13.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q13.c.i
+.PHONY : Q13.c.i
+
+Q13.s: Q13.c.s
+.PHONY : Q13.s
+
+# target to generate assembly for a file
+Q13.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q13.c.s
+.PHONY : Q13.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... Q12.obj
 	@echo ... Q12.i
 	@echo ... Q12.s
+	@echo ... Q13.obj
+	@echo ... Q13.i
+	@echo ... Q13.s
 .PHONY : help
 
 

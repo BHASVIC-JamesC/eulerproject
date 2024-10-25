@@ -1,3 +1,7 @@
+PSA- all written in python
+
+-----------------------------------------------------------
+
 import math
 number = 6857
 root = math.floor(math.sqrt(number))

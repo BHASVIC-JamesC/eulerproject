@@ -128,53 +128,29 @@ eulerproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/build
 .PHONY : eulerproject/fast
 
-Q12.obj: Q12.c.obj
-.PHONY : Q12.obj
+Q15.obj: Q15.c.obj
+.PHONY : Q15.obj
 
 # target to build an object file
-Q12.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q12.c.obj
-.PHONY : Q12.c.obj
+Q15.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q15.c.obj
+.PHONY : Q15.c.obj
 
-Q12.i: Q12.c.i
-.PHONY : Q12.i
-
-# target to preprocess a source file
-Q12.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q12.c.i
-.PHONY : Q12.c.i
-
-Q12.s: Q12.c.s
-.PHONY : Q12.s
-
-# target to generate assembly for a file
-Q12.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q12.c.s
-.PHONY : Q12.c.s
-
-Q13.obj: Q13.c.obj
-.PHONY : Q13.obj
-
-# target to build an object file
-Q13.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q13.c.obj
-.PHONY : Q13.c.obj
-
-Q13.i: Q13.c.i
-.PHONY : Q13.i
+Q15.i: Q15.c.i
+.PHONY : Q15.i
 
 # target to preprocess a source file
-Q13.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q13.c.i
-.PHONY : Q13.c.i
+Q15.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q15.c.i
+.PHONY : Q15.c.i
 
-Q13.s: Q13.c.s
-.PHONY : Q13.s
+Q15.s: Q15.c.s
+.PHONY : Q15.s
 
 # target to generate assembly for a file
-Q13.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q13.c.s
-.PHONY : Q13.c.s
+Q15.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/Q15.c.s
+.PHONY : Q15.c.s
 
 # Help Target
 help:
@@ -185,12 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... eulerproject
-	@echo ... Q12.obj
-	@echo ... Q12.i
-	@echo ... Q12.s
-	@echo ... Q13.obj
-	@echo ... Q13.i
-	@echo ... Q13.s
+	@echo ... Q15.obj
+	@echo ... Q15.i
+	@echo ... Q15.s
 .PHONY : help
 
 

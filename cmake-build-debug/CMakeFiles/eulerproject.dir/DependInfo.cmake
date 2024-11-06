@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/james/Downloads/comp sci work/eulerproject/Q16.c" "CMakeFiles/eulerproject.dir/Q16.c.obj" "gcc" "CMakeFiles/eulerproject.dir/Q16.c.obj.d"
+  "C:/Users/james/Downloads/comp sci work/eulerproject/ritangle.c" "CMakeFiles/eulerproject.dir/ritangle.c.obj" "gcc" "CMakeFiles/eulerproject.dir/ritangle.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

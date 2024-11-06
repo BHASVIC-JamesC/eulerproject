@@ -4,5 +4,5 @@ project(eulerproject C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(eulerproject
-        ritangle.c
-        Q16)
+        Q18.c
+        Q18.c)

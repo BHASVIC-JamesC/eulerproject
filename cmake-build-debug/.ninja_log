@@ -1,11 +1,10 @@
 # ninja log v6
-9	123	7488136654653928	CMakeFiles/eulerproject.dir/main.c.obj	d05e18ff7fa2c03
-142	313	7514668504079166	eulerproject.exe	66c59bfc49125cad
-4	342	7514696946875351	build.ninja	a6742a4eee83af01
-5	143	7488273331299453	CMakeFiles/eulerproject.dir/Q2.c.obj	de78ccca3071b709
-6	141	7514668502720940	CMakeFiles/eulerproject.dir/Q3.c.obj	20cc2cac77ad015e
-2	357	7514696946875351	build.ninja	a6742a4eee83af01
-2	156	7514696947286817	CMakeFiles/eulerproject.dir/Q4.c.obj	df47f97350d087d9
-157	314	7514696948842172	eulerproject.exe	ba4d9eef15735534
-6	157	7514703579437104	CMakeFiles/eulerproject.dir/Q4.c.obj	df47f97350d087d9
 158	322	7514703580956413	eulerproject.exe	ba4d9eef15735534
+2	357	7538056617791613	build.ninja	a6742a4eee83af01
+2	342	7538056617791613	build.ninja	a6742a4eee83af01
+1	164	7538056618192121	CMakeFiles/eulerproject.dir/ritangle2.c.obj	2a0525e0c9ffd19b
+166	364	7538056619837163	eulerproject.exe	abd9c4c89472eb8a
+7	132	7538058563860131	CMakeFiles/eulerproject.dir/ritangle2.c.obj	2a0525e0c9ffd19b
+132	309	7538058565110204	eulerproject.exe	abd9c4c89472eb8a
+6	134	7538060080488931	CMakeFiles/eulerproject.dir/ritangle2.c.obj	2a0525e0c9ffd19b
+135	306	7538060081779423	eulerproject.exe	abd9c4c89472eb8a

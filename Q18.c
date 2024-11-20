@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     // Define the triangle as a centered 15x15 square with zeros padding the sides
     int triangle[15][15] = {
         {0, 0, 0, 0, 0, 0, 0, 75, 0, 0, 0, 0, 0, 0, 0},

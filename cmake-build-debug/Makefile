@@ -128,29 +128,29 @@ eulerproject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/build
 .PHONY : eulerproject/fast
 
-ritangle.obj: ritangle.c.obj
-.PHONY : ritangle.obj
+ritangle2.obj: ritangle2.c.obj
+.PHONY : ritangle2.obj
 
 # target to build an object file
-ritangle.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/ritangle.c.obj
-.PHONY : ritangle.c.obj
+ritangle2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/ritangle2.c.obj
+.PHONY : ritangle2.c.obj
 
-ritangle.i: ritangle.c.i
-.PHONY : ritangle.i
+ritangle2.i: ritangle2.c.i
+.PHONY : ritangle2.i
 
 # target to preprocess a source file
-ritangle.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/ritangle.c.i
-.PHONY : ritangle.c.i
+ritangle2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/ritangle2.c.i
+.PHONY : ritangle2.c.i
 
-ritangle.s: ritangle.c.s
-.PHONY : ritangle.s
+ritangle2.s: ritangle2.c.s
+.PHONY : ritangle2.s
 
 # target to generate assembly for a file
-ritangle.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/ritangle.c.s
-.PHONY : ritangle.c.s
+ritangle2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\eulerproject.dir\build.make CMakeFiles/eulerproject.dir/ritangle2.c.s
+.PHONY : ritangle2.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... eulerproject
-	@echo ... ritangle.obj
-	@echo ... ritangle.i
-	@echo ... ritangle.s
+	@echo ... ritangle2.obj
+	@echo ... ritangle2.i
+	@echo ... ritangle2.s
 .PHONY : help
 
 

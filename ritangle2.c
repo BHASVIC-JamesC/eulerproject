@@ -1,24 +1,26 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <math.h>
+#include <ctype.h>
+#include <stdio.h>
 int main(void) {
-    srand(time(NULL));
-    for(int people = 0; people<=5;people++) {
-        int countDice = 0,countCoin = 0;
-        int diceRoll;
-        int coinFlip;
-        do {
-            countDice++;
-            diceRoll = (rand() % 6)+1;
+    int a=2024,count = 0;
+    double c;
+    for(int i = 1;i<=100000;i++) {
+        c = sqrt(a*a+i*i);
+        int integerc = c;
+        double difference = c - integerc;
+        if(difference>0) {
+            NULL;
         }
-        while(diceRoll != 6);
-        do {
-            countCoin ++;
-            coinFlip = (rand()%2)+1;}
-        while(coinFlip != 2);
-        printf("it took %d dice rolls and %d coin flips.\n",countDice,countCoin);
-    }
+        else {
+            count++;
+            printf("[%d][%d][%f]\n",a,i,c);
+                }
 
+
+
+    }
+    printf("\n%d",count);
     return 0;
 }

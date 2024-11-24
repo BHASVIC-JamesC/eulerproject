@@ -44,45 +44,34 @@ int is_triangular(int num) {
     return num == n * (n + 1) / 2; // Check if the number equals T_n
 }
 
-// Function to check if fiveAC is divisible by all specified digits
-int is_divisible_by_digits(int fiveAC, int oneAC, int oneDN, int threeAC) {
-    // Extract digits of oneAC
-    int digit1oneAC = oneAC / 100;
-    int digit2oneAC = (oneAC / 10) % 10;
-    int digit3oneAC = oneAC % 10;
+// Function to calculate the sum of specified digits and check divisibility
+int is_divisible_by_combined_sum(int fiveAC, int oneAC, int oneDN, int threeAC) {
+    int sum = 0;
 
-    // Extract digits of oneDN
-    int digit2oneDN = (oneDN / 10) % 10;
-    int digit3oneDN = oneDN % 10;
+    // Add digits of 5AC
+    int temp = fiveAC;
+    while (temp > 0) {
+        sum += temp % 10;
+        temp /= 10;
+    }
 
-    // Extract digits of threeAC
-    int digit1threeAC = threeAC / 10;
-    int digit2threeAC = threeAC % 10;
+    // Add first two digits of 1DN
+    sum += oneDN / 100; // First digit
+    sum += (oneDN / 10) % 10; // Second digit
 
-    // Extract digits of fiveAC
-    int digit1fiveAC = fiveAC / 100;
-    int digit2fiveAC = (fiveAC / 10) % 10;
-    int digit3fiveAC = fiveAC % 10;
+    // Add second and third digits of 1AC
+    sum += (oneAC / 10) % 10; // Second digit
+    sum += oneAC % 10; // Third digit
 
-    // Check divisibility by all digits of oneAC
-    if (digit1oneAC != 0 && fiveAC % digit1oneAC != 0) return 0;
-    if (digit2oneAC != 0 && fiveAC % digit2oneAC != 0) return 0;
-    if (digit3oneAC != 0 && fiveAC % digit3oneAC != 0) return 0;
+    // Add digits of 3AC
+    temp = threeAC;
+    while (temp > 0) {
+        sum += temp % 10;
+        temp /= 10;
+    }
 
-    // Check divisibility by the second and third digits of 1DN
-    if (digit2oneDN != 0 && fiveAC % digit2oneDN != 0) return 0;
-    if (digit3oneDN != 0 && fiveAC % digit3oneDN != 0) return 0;
-
-    // Check divisibility by all digits of threeAC
-    if (digit1threeAC != 0 && fiveAC % digit1threeAC != 0) return 0;
-    if (digit2threeAC != 0 && fiveAC % digit2threeAC != 0) return 0;
-
-    // Check divisibility by all digits of fiveAC itself
-    if (digit1fiveAC != 0 && fiveAC % digit1fiveAC != 0) return 0;
-    if (digit2fiveAC != 0 && fiveAC % digit2fiveAC != 0) return 0;
-    if (digit3fiveAC != 0 && fiveAC % digit3fiveAC != 0) return 0;
-
-    return 1; // fiveAC is divisible by all required digits
+    // Check divisibility of 5AC by the combined sum
+    return fiveAC % sum == 0;
 }
 
 int main(void) {
@@ -95,20 +84,20 @@ int main(void) {
         int digit2oneAC = (oneAC / 10) % 10;
         int digit3oneAC = oneAC % 10;
 
-        for (int oneDN = 100; oneDN < 1000; oneDN++) {
-            if (!is_prime(oneDN)) continue; // 1DN must be prime
+        for (int fourDN = 10; fourDN < 100; fourDN++) {
+            if (!is_triangular(fourDN)) continue; // 4DN must be triangular
 
-            int digit1oneDN = oneDN / 100;
-            int digit2oneDN = (oneDN / 10) % 10;
-            int digit3oneDN = oneDN % 10;
+            for (int prime = 2; prime < 10; prime++) {
+                if (!is_prime(prime)) continue; // Iterate through prime multipliers
 
-            if (digit1oneDN != digit1oneAC) continue; // 1AC and 1DN must start with the same digit
+                int oneDN = fourDN * prime;
+                if (oneDN < 100 || oneDN >= 1000) continue; // 1DN must be three digits
 
-            for (int fourDN = 10; fourDN < 100; fourDN++) {
-                if (!is_triangular(fourDN)) continue; // 4DN must be triangular
+                int digit1oneDN = oneDN / 100;
+                int digit2oneDN = (oneDN / 10) % 10;
+                int digit3oneDN = oneDN % 10;
 
-                int digit1fourDN = fourDN / 10;
-                int digit2fourDN = fourDN % 10;
+                if (digit1oneDN != digit1oneAC) continue; // 1AC and 1DN must start with the same digit
 
                 for (int twoDN = 10; twoDN < 100; twoDN++) {
                     if (!is_perfect_square(digit_sum(twoDN))) continue; // 2DN must have a square digit sum
@@ -126,11 +115,18 @@ int main(void) {
                         int digit2threeAC = threeAC % 10;
 
                         if (digit1threeAC != digit2twoDN) continue; // First digit of 3AC = second digit of 2DN
-                        if (digit2threeAC != digit1fourDN) continue; // Second digit of 3AC = first digit of 4DN
+                        if (digit2threeAC != fourDN / 10) continue; // Second digit of 3AC = first digit of 4DN
 
                         for (int fiveAC = 100; fiveAC < 1000; fiveAC++) {
-                            if (!is_divisible_by_digits(fiveAC, oneAC, oneDN, threeAC)) continue; // Check divisibility
+                            int digit1fiveAC = fiveAC / 100;
+                            int digit2fiveAC = (fiveAC / 10) % 10;
+                            int digit3fiveAC = fiveAC % 10;
 
+                            if (digit3fiveAC != fourDN % 10) continue; // Last digit of 4DN = last digit of 5AC
+                            if (digit1fiveAC != digit3oneDN) continue; // First digit of 5AC = third digit of 1DN
+
+                            if (!is_divisible_by_combined_sum(fiveAC, oneAC, oneDN, threeAC)) continue; // Check divisibility
+                            if (digit1threeAC != 3) continue;
                             // All conditions satisfied, print the solution
                             printf("1AC=%d, 1DN=%d, 2DN=%d, 3AC=%d, 4DN=%d, 5AC=%d\n",
                                    oneAC, oneDN, twoDN, threeAC, fourDN, fiveAC);

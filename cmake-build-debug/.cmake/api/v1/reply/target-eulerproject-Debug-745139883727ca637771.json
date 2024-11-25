@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "TriangleSolver.exe"
+			"path" : "eulerproject.exe"
 		},
 		{
-			"path" : "TriangleSolver.pdb"
+			"path" : "eulerproject.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -52,12 +52,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
-	"id" : "TriangleSolver::@6890427a1f51a3e7e1df",
+	"id" : "eulerproject::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -77,8 +76,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "TriangleSolver",
-	"nameOnDisk" : "TriangleSolver.exe",
+	"name" : "eulerproject",
+	"nameOnDisk" : "eulerproject.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,8 +89,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -100,13 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ritangle3.c",
+			"path" : "ritangleTriangle.c",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -1,4 +1,6 @@
 # ninja log v6
 356	537	7542607344888602	eulerproject.exe	45d3d5c0b6c7c389
-4	358	7542616594330196	build.ninja	a6742a4eee83af01
+2	349	7542619749819340	build.ninja	a6742a4eee83af01
 4	355	7542607341378962	CMakeFiles/eulerproject.dir/ritangleTriangle.c.obj	79b88ecb2bc676b2
+2	355	7542619851647013	CMakeFiles/eulerproject.dir/ritangleTriangle.c.obj	79b88ecb2bc676b2
+356	567	7542619855187572	eulerproject.exe	45d3d5c0b6c7c389

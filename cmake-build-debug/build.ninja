@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: TriangleSolver
+# Project: eulerproject
 # Configurations: Debug
 # =============================================================================
 
@@ -41,43 +41,37 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target TriangleSolver
+# Object build statements for EXECUTABLE target eulerproject
 
 
 #############################################
-# Order-only phony target for TriangleSolver
+# Order-only phony target for eulerproject
 
-build cmake_object_order_depends_target_TriangleSolver: phony || .
+build cmake_object_order_depends_target_eulerproject: phony || .
 
-build CMakeFiles/TriangleSolver.dir/main.c.obj: C_COMPILER__TriangleSolver_unscanned_Debug C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/main.c || cmake_object_order_depends_target_TriangleSolver
-  DEP_FILE = CMakeFiles\TriangleSolver.dir\main.c.obj.d
+build CMakeFiles/eulerproject.dir/ritangleTriangle.c.obj: C_COMPILER__eulerproject_unscanned_Debug C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/ritangleTriangle.c || cmake_object_order_depends_target_eulerproject
+  DEP_FILE = CMakeFiles\eulerproject.dir\ritangleTriangle.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\TriangleSolver.dir
-  OBJECT_FILE_DIR = CMakeFiles\TriangleSolver.dir
-
-build CMakeFiles/TriangleSolver.dir/ritangle3.c.obj: C_COMPILER__TriangleSolver_unscanned_Debug C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/ritangle3.c || cmake_object_order_depends_target_TriangleSolver
-  DEP_FILE = CMakeFiles\TriangleSolver.dir\ritangle3.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\TriangleSolver.dir
-  OBJECT_FILE_DIR = CMakeFiles\TriangleSolver.dir
+  OBJECT_DIR = CMakeFiles\eulerproject.dir
+  OBJECT_FILE_DIR = CMakeFiles\eulerproject.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target TriangleSolver
+# Link build statements for EXECUTABLE target eulerproject
 
 
 #############################################
-# Link the executable TriangleSolver.exe
+# Link the executable eulerproject.exe
 
-build TriangleSolver.exe: C_EXECUTABLE_LINKER__TriangleSolver_Debug CMakeFiles/TriangleSolver.dir/main.c.obj CMakeFiles/TriangleSolver.dir/ritangle3.c.obj
+build eulerproject.exe: C_EXECUTABLE_LINKER__eulerproject_Debug CMakeFiles/eulerproject.dir/ritangleTriangle.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\TriangleSolver.dir
+  OBJECT_DIR = CMakeFiles\eulerproject.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = TriangleSolver.exe
-  TARGET_IMPLIB = libTriangleSolver.dll.a
-  TARGET_PDB = TriangleSolver.exe.dbg
+  TARGET_FILE = eulerproject.exe
+  TARGET_IMPLIB = libeulerproject.dll.a
+  TARGET_PDB = eulerproject.exe.dbg
 
 
 #############################################
@@ -105,7 +99,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build TriangleSolver: phony TriangleSolver.exe
+build eulerproject: phony eulerproject.exe
 
 # =============================================================================
 # Folder targets.
@@ -115,7 +109,7 @@ build TriangleSolver: phony TriangleSolver.exe
 #############################################
 # Folder: C:/Users/james/Downloads/comp sci work/eulerproject/cmake-build-debug
 
-build all: phony TriangleSolver.exe
+build all: phony eulerproject.exe
 
 # =============================================================================
 # Built-in targets

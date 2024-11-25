@@ -1,3 +1,3 @@
-C:/Users/james/Downloads/comp sci work/eulerproject/cmake-build-debug/CMakeFiles/TriangleSolver.dir
+C:/Users/james/Downloads/comp sci work/eulerproject/cmake-build-debug/CMakeFiles/eulerproject.dir
 C:/Users/james/Downloads/comp sci work/eulerproject/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/james/Downloads/comp sci work/eulerproject/cmake-build-debug/CMakeFiles/rebuild_cache.dir

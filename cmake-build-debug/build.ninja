@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: eulerproject
+# Project: TriangleSolver
 # Configurations: Debug
 # =============================================================================
 
@@ -41,37 +41,43 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target eulerproject
+# Object build statements for EXECUTABLE target TriangleSolver
 
 
 #############################################
-# Order-only phony target for eulerproject
+# Order-only phony target for TriangleSolver
 
-build cmake_object_order_depends_target_eulerproject: phony || .
+build cmake_object_order_depends_target_TriangleSolver: phony || .
 
-build CMakeFiles/eulerproject.dir/ritangle3.c.obj: C_COMPILER__eulerproject_unscanned_Debug C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/ritangle3.c || cmake_object_order_depends_target_eulerproject
-  DEP_FILE = CMakeFiles\eulerproject.dir\ritangle3.c.obj.d
+build CMakeFiles/TriangleSolver.dir/main.c.obj: C_COMPILER__TriangleSolver_unscanned_Debug C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/main.c || cmake_object_order_depends_target_TriangleSolver
+  DEP_FILE = CMakeFiles\TriangleSolver.dir\main.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\eulerproject.dir
-  OBJECT_FILE_DIR = CMakeFiles\eulerproject.dir
+  OBJECT_DIR = CMakeFiles\TriangleSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\TriangleSolver.dir
+
+build CMakeFiles/TriangleSolver.dir/ritangle3.c.obj: C_COMPILER__TriangleSolver_unscanned_Debug C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/ritangle3.c || cmake_object_order_depends_target_TriangleSolver
+  DEP_FILE = CMakeFiles\TriangleSolver.dir\ritangle3.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\TriangleSolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\TriangleSolver.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target eulerproject
+# Link build statements for EXECUTABLE target TriangleSolver
 
 
 #############################################
-# Link the executable eulerproject.exe
+# Link the executable TriangleSolver.exe
 
-build eulerproject.exe: C_EXECUTABLE_LINKER__eulerproject_Debug CMakeFiles/eulerproject.dir/ritangle3.c.obj
+build TriangleSolver.exe: C_EXECUTABLE_LINKER__TriangleSolver_Debug CMakeFiles/TriangleSolver.dir/main.c.obj CMakeFiles/TriangleSolver.dir/ritangle3.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\eulerproject.dir
+  OBJECT_DIR = CMakeFiles\TriangleSolver.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = eulerproject.exe
-  TARGET_IMPLIB = libeulerproject.dll.a
-  TARGET_PDB = eulerproject.exe.dbg
+  TARGET_FILE = TriangleSolver.exe
+  TARGET_IMPLIB = libTriangleSolver.dll.a
+  TARGET_PDB = TriangleSolver.exe.dbg
 
 
 #############################################
@@ -99,7 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build eulerproject: phony eulerproject.exe
+build TriangleSolver: phony TriangleSolver.exe
 
 # =============================================================================
 # Folder targets.
@@ -109,7 +115,7 @@ build eulerproject: phony eulerproject.exe
 #############################################
 # Folder: C:/Users/james/Downloads/comp sci work/eulerproject/cmake-build-debug
 
-build all: phony eulerproject.exe
+build all: phony TriangleSolver.exe
 
 # =============================================================================
 # Built-in targets

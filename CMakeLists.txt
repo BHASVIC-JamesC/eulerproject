@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.21)
 project(eulerproject C)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 99)
 
 add_executable(eulerproject
         ritangleTriangle.c)

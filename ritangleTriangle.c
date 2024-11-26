@@ -49,7 +49,7 @@ int main() {
     for(int a =11; a < 100; a = a + 2) {
         for(int b=11; b < 100; b= b + 2) {
             for(int c = 11;c<100;c = c + 2) {
-                if(a+b > c) {
+                if(a+b >c || a+c >b || b+c > a) {
                     if(triangular(a+b+c)== 1) {
                         if(is_prime(a) == 0) {
                             if(is_prime(b)==0) {

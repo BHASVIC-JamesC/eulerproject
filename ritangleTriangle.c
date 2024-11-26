@@ -1,73 +1,69 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdbool.h>
 
-int triangular(int number) {
-    int n = (int)(sqrt(2 * number));
-    if(number == n * (n+1)/2) {
-        return 1;
-    }
-    return 0;
-}
 
-int is_prime(int num) {
-    if (num <= 1) return 0;
-    if (num == 2) return 1;
-    if (num % 2 == 0) return 0;
-    for (int i = 3; i <= sqrt(num); i += 2) {
-        if (num % i == 0) return 0;
+int nextPermutation(int *arr, int n) {
+    int i = n - 2;
+    while (i >= 0 && arr[i] >= arr[i + 1]) i--;
+    if (i < 0) return 0;
+
+    int j = n - 1;
+    while (arr[j] <= arr[i]) j--;
+
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+
+    for (int k = i + 1, l = n - 1; k < l; k++, l--) {
+        temp = arr[k];
+        arr[k] = arr[l];
+        arr[l] = temp;
     }
     return 1;
-}
+}void checkPermutations(int arr[], int size, FILE *file2) {
+    do {
+        rewind(file2);
+        for (int x = 0; x < 44; x++) {
+            int a, b, c;
+            fscanf(file2, "%d,%d,%d", &a, &b, &c);
 
+            // Extract digits for comparison
+            int digit1AC = arr[0] / 10;          // First digit of 1ac
+            int digit1DN = a / 10;              // First digit of 1dn
 
+            int digit3DN = b % 10;              // Third digit of 7dn
+            int digit2AC = (c / 10) % 10;       // Second digit of 13ac
 
-int gcd(int a, int b)
-{
-    // Find Minimum of a and b
-    int result = ((a < b) ? a : b);
-    while (result > 0) {
-        // Check if both a and b are divisible by result
-        if (a % result == 0 && b % result == 0) {
-            break;
+            int digit2DN = (b / 10) % 10;       // Second digit of 7dn
+            int digit3AC = c % 10;              // Third digit of 13ac
+
+            // Updated condition
+            if (digit1AC == digit1DN && (digit3DN == digit2AC || digit2DN == digit3AC)) {
+                printf("1ac: %d 2ac: %d 4ac: %d  1dn: %d 7dn: %d 13ac: %d\n",
+                       arr[0], arr[1], arr[2], a, b, c);
+            }
         }
-        result--;
-    }
-    // return gcd of a nd b
-    return result;
+    } while (nextPermutation(arr, size));
 }
 
-int co_prime(int num1,int num2) {
-    if(gcd(num1,num2) == 1) {
-        return 1;
-    }
-    return 0;
-}
 
 
 int main() {
-    for(int a =11; a < 100; a = a + 2) {
-        for(int b=11; b < 100; b= b + 2) {
-            for(int c = 11;c<100;c = c + 2) {
-                if(a+b >c || a+c >b || b+c > a) {
-                    if(triangular(a+b+c)== 1) {
-                        if(is_prime(a) == 0) {
-                            if(is_prime(b)==0) {
-                                if(is_prime(c)==0) {
-                                    if(co_prime(a,b)==1) {
-                                        if(co_prime(a,c)==1) {
-                                            if(co_prime(b,c)==1) {
-                                                printf("a:%d b:%d c:%d\n",a,b,c);
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    FILE *file, *file2;
+    file = fopen("C:\\Users\\james\\Downloads\\comp sci work\\eulerproject\\1ac2ac4ac", "r");
+    file2 = fopen("C:\\Users\\james\\Downloads\\comp sci work\\eulerproject\\PP", "r");
+
+    if (!file || !file2) {
+        printf("Error opening files.\n");
+        return 1;
     }
+
+    int arr[3];
+    while (fscanf(file, "%d,%d,%d", &arr[0], &arr[1], &arr[2]) != EOF) {
+        checkPermutations(arr, 3, file2);
+    }
+
+    fclose(file);
+    fclose(file2);
     return 0;
 }

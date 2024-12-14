@@ -4,4 +4,5 @@ project(eulerproject C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(eulerproject
-        ritangleTriangle2.c)
+        binarysort.c
+)

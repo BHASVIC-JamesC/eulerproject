@@ -1,0 +1,3 @@
+"C:\Users\james\AppData\Local\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\eulerproject.dir/objects.a
+C:\Users\james\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\ar.exe qc CMakeFiles\eulerproject.dir/objects.a @CMakeFiles\eulerproject.dir\objects1.rsp
+C:\Users\james\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\eulerproject.dir/objects.a -Wl,--no-whole-archive -o eulerproject.exe -Wl,--out-implib,libeulerproject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\eulerproject.dir\linkLibs.rsp

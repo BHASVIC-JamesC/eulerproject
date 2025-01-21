@@ -1,8 +1,12 @@
 #include <stdio.h>
 
+
+int max_path(int triangle[16][16]);
+int max(int x, int y);
+
 int main(void) {
     // Define the triangle as a centered 15x15 square with zeros padding the sides
-    int triangle[15][15] = {
+    int triangle[16][16] = {
         {75},
         {95, 64},
         {17, 47, 82},
@@ -20,7 +24,36 @@ int main(void) {
         {4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23}
     };
   
-
+    printf(max_path(triangle[16][16]));
 
     return 0;
+}
+
+int  max_path(triangle[16][16]) {
+
+    int n=16;
+
+    int dp[n][n];
+
+    for(int i =0;i<n;i++) {
+        dp[15][i] = triangle[15][i];
+    }
+    for(int i = n-2;i<=-1;i--) {
+        for(int j =0;j<= 16;j++) {
+            dp[i][j] = triangle[i][j] + max(dp[i][j],dp[i][j+1]);
+        }
+    }
+
+    return dp[0][0];
+
+}
+
+int max(x,y) {
+
+    if(x>y) {
+        return x;
+    }
+    else {
+        return y;
+    }
 }

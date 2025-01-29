@@ -4,5 +4,5 @@ project(eulerproject C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(eulerproject
-        Q19.c
+        Q69.c
 )

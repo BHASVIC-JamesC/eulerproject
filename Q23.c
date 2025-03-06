@@ -4,14 +4,20 @@
 int abundantNumber(int i);
 bool twoSum(int ,int* abundantNumbers);
 int main(void) {
-    int abundantNumbers[7428] = {0};
+    int abundantNumbers[14852] = {0};
     int count = 0;
     for(int j = 12;j<30000;j++) {
         if(abundantNumber(j) == 1) {
             abundantNumbers[count] = j;
             count++;
+            abundantNumbers[count] = j;
+            count++;
 
         }
+    }
+
+    for(int i =0;i<=14851;i++) {
+        printf("%d\n",abundantNumbers[i]);
     }
     int count2 = 0;
     int sum2=0;
@@ -42,7 +48,7 @@ int abundantNumber(int i) {
 
 bool twoSum(int x,int* abundantNumbers) {
     int left = 0;
-    int right = 7426;
+    int right = 14851;
     while(left < right) {
         if(abundantNumbers[left] + abundantNumbers[right] == x) {
             return true;

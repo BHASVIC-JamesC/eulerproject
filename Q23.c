@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
+#include <time.h>
+
 int abundantNumber(int i);
 bool twoSum(int ,int* abundantNumbers);
 int main(void) {
+    clock_t start = clock();
     int abundantNumbers[14852] = {0};
     int count = 0;
     for(int j = 12;j<30000;j++) {
@@ -16,9 +19,7 @@ int main(void) {
         }
     }
 
-    for(int i =0;i<=14851;i++) {
-        printf("%d\n",abundantNumbers[i]);
-    }
+
     int count2 = 0;
     int sum2=0;
     for(int j = 1;j<=28123;j++) {
@@ -29,6 +30,9 @@ int main(void) {
 
     }
     printf("%d   %d",count2,sum2);
+    clock_t end = clock();
+    double time = (double) (end-start) / CLOCKS_PER_SEC;
+    printf("\nruntime (s):%f",time);
     return 0;
 }
 

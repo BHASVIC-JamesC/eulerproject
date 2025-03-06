@@ -5,5 +5,5 @@ set(CMAKE_C_STANDARD 99)
 
 add_executable(eulerproject
 
-        Q23.c
+        Q25.c
 )

@@ -3,36 +3,59 @@
 #include <stdbool.h>
 #include <time.h>
 
-int check(int first,int second,int base);
+int periodic(int* decimals);
 
 int main(void) {
-    int count = 0;
-    int decimals[1000] = {0};
-    int place = 0;
-    bool state = true;
-    int first = 10;
-    int second = 7;
-    decimals[place] = first/second;
-    place++;
-    first = (first-second)*10;
-    while(state == true) {
+    int max = 0;
+    int position = 0;
+    for(int i = 2;i<=1000;i++) {
+        int decimals[1000] = {0};
+        int place = 0;
+        int first = 10;
+        int second = i;
         decimals[place] = first/second;
-        tempfirst
-
-        for(int j = 1;j<100;j++) {
-            if(decimals[j] == decimals[0]){
-                state = false;
-                break;
+        place++;
+        first = 10 * (first%second);
+        int x = 0;
+        while(x<999) {
+            decimals[place] = first/second;
+            first = 10 * (first % second);
+            place++;
+            x++;
         }
-        }
+        printf("%d\n",periodic(decimals));
 
-        count++;
     }
 
-    printf("%d",count);
-
-
-
     return 0;
+}
+
+int periodic(int* decimals) {
+    int length = 0;
+    int period[1000] = {0};
+    period[0] = decimals[0];
+    for(int i = 1;i<1000;i++) {
+        if(decimals[i] != decimals[0]) {
+            length ++;
+            period[i] = decimals[i];
+        }
+        else {
+            bool state = true;
+            int start = 0;
+            for(int x = i;x<=length;x++) {
+                if(period[start] == decimals[x]) {
+                    state = true;
+                }
+                else {
+                    state = false;
+                    return 0;
+
+                }
+            }
+        }
+    }
+    return length;
+
+
 }
 

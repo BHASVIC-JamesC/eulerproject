@@ -30,13 +30,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c32aab85-e120-425b-8d8f-0ccad3824cdf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Q31.c" beforeDir="false" afterPath="$PROJECT_DIR$/Q31.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/eulerproject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/eulerproject.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +108,7 @@
       <workItem from="1741793698267" duration="764000" />
       <workItem from="1741862351710" duration="3072000" />
       <workItem from="1742303300272" duration="3279000" />
-      <workItem from="1742312280002" duration="987000" />
+      <workItem from="1742312280002" duration="4289000" />
     </task>
     <servers />
   </component>

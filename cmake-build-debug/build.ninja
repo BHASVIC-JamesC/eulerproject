@@ -49,8 +49,8 @@ cmake_ninja_workdir = C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/cma
 
 build cmake_object_order_depends_target_eulerproject: phony || .
 
-build CMakeFiles/eulerproject.dir/Q31.c.obj: C_COMPILER__eulerproject_unscanned_Debug C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/Q31.c || cmake_object_order_depends_target_eulerproject
-  DEP_FILE = CMakeFiles\eulerproject.dir\Q31.c.obj.d
+build CMakeFiles/eulerproject.dir/Q32.c.obj: C_COMPILER__eulerproject_unscanned_Debug C$:/Users/james/Downloads/comp$ sci$ work/eulerproject/Q32.c || cmake_object_order_depends_target_eulerproject
+  DEP_FILE = CMakeFiles\eulerproject.dir\Q32.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\eulerproject.dir
   OBJECT_FILE_DIR = CMakeFiles\eulerproject.dir
@@ -63,7 +63,7 @@ build CMakeFiles/eulerproject.dir/Q31.c.obj: C_COMPILER__eulerproject_unscanned_
 #############################################
 # Link the executable eulerproject.exe
 
-build eulerproject.exe: C_EXECUTABLE_LINKER__eulerproject_Debug CMakeFiles/eulerproject.dir/Q31.c.obj
+build eulerproject.exe: C_EXECUTABLE_LINKER__eulerproject_Debug CMakeFiles/eulerproject.dir/Q32.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\eulerproject.dir

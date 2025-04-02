@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/james.cook24/Downloads/eulerproject/cmake-build-debug",
-		"source" : "C:/Users/james.cook24/Downloads/eulerproject"
+		"build" : "C:/Users/james/Downloads/comp sci work/eulerproject/cmake-build-debug",
+		"source" : "C:/Users/james/Downloads/comp sci work/eulerproject"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }

@@ -2,8 +2,6 @@
 #include <math.h>
 #include <stdbool.h>
 #include <time.h>
-
-
 #include <string.h>
 
 bool binaryConvertor(int num);

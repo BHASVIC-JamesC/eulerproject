@@ -7,5 +7,5 @@ add_executable(eulerproject
 
 
 
-        Q43.c
+        Q47.c
 )

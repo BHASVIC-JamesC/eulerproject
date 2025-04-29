@@ -17,10 +17,7 @@ int main(void) {
             length++;
         }
 
-        if(length % 2 != 0) {
 
-            continue;
-        }
         long long int num1 =0,num2 = 0;
         temp = num;
         int digits[length];

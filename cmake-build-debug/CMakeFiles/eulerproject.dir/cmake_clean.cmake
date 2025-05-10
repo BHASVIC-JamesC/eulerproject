@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/eulerproject.dir/Q67.c.obj"
-  "CMakeFiles/eulerproject.dir/Q67.c.obj.d"
+  "CMakeFiles/eulerproject.dir/Q92.c.obj"
+  "CMakeFiles/eulerproject.dir/Q92.c.obj.d"
   "eulerproject.exe"
   "eulerproject.exe.manifest"
   "eulerproject.pdb"

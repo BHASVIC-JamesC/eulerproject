@@ -7,9 +7,5 @@ add_executable(eulerproject
 
 
 
-
-
-
-
-        Q808.c
+        Q684.c
 )

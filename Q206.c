@@ -2,19 +2,19 @@
 #include <stdbool.h>
 
 int main(void) {
-    unsigned long long int x = 1000000000;
+    unsigned long long int x = 1111111111111111111;
     bool state = false;
 
     while(!state) {
-        unsigned long long int square = x * x;
+        
 
         // Check if last digit is 0
-        if (square % 10 != 0) {
+        if (x % 10 != 0) {
             x += 10;
             continue;
         }
 
-        unsigned long long int temp = square;
+        unsigned long long int temp = x;
         int count = 9;
         bool valid = true;
 
@@ -33,10 +33,10 @@ int main(void) {
         if (valid) {
             state = true;
         } else {
-            x += 10;
+            x ++;
         }
     }
 
-    printf("x: %llu\nx^2: %llu\n", x, x * x);
+    printf("x: %llu\n", x);
     return 0;
 }
